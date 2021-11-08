@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> 
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+    <title>Par ou Impar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Par ou Impar</h1>
+    </header>
+
+    <main>
+
+        <div id="jogador" class="campo">
+            <h2>Jogador</h2>
+            <div class="maos">
+                <img src="images/0.png" id="JME">
+                <img src="images/0.png" id="JMD">
+            </div>
+            
+            <input type="text" name="par" placeholder="--" class="campotexto" id="par" maxlength="2" onkeyup="iniciar()">
+            <p id="VJ" class="vitorias">Vitorias: 00</p>
+        </div>
+
+        <div id="info">
+            <h1>DIGITE UM NUMERO DE 0 A 10!</h1>
+            <p id="partidas">Quantidade de partidas jogadas: 0</p>
+            <div onclick="iniciar(true)" id="jogar">Jogar</div>
+            <p id="alerta"></p>
+        </div>
+        
+        <div id="computador" class="campo">
+            <h2>Maquina</h2>
+            <div class="maos">
+                <img src="images/0.png" id="CME">
+                <img src="images/0.png" id="CMD">
+            </div>
+            
+            <div class="campotexto" id="impar">
+                --
+            </div>
+            <p id="VC" class="vitorias">Vitorias: 00</p>
+            
+    </main>
+    <footer>
+        <h2>INSTRUÇÕES:</h2>
+        <p>
+            1 - Informe um número de 0 a 10
+            <br>
+            2 - Clique em jogar ou aperte enter para iniciar o jogo
+            <br>
+            Caso a soma dos números seja par, você ganhou. Caso contrario, você perdeu.
+        </p>
+    </footer>
+</body>
+</html>
